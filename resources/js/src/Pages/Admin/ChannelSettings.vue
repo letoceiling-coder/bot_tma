@@ -95,6 +95,9 @@
       <button @click="saveChannels" class="btn btn-primary" :disabled="saving">
         {{ saving ? 'Сохранение...' : 'Сохранить все каналы' }}
       </button>
+      <button @click="deleteAllChannels" class="btn btn-danger" :disabled="channels.length === 0 || deletingAll">
+        {{ deletingAll ? 'Удаление...' : 'Удалить все каналы' }}
+      </button>
     </div>
   </div>
 </template>
@@ -111,7 +114,8 @@ export default {
   data() {
     return {
       channels: [],
-      saving: false
+      saving: false,
+      deletingAll: false
     }
   },
   mounted() {
@@ -277,6 +281,44 @@ export default {
         })
       } finally {
         this.saving = false
+      }
+    },
+    
+    async deleteAllChannels() {
+      if (this.channels.length === 0) {
+        this.$notify({
+          title: 'Информация',
+          text: 'Нет каналов для удаления',
+          type: 'info'
+        })
+        return
+      }
+
+      if (!confirm(`Вы уверены, что хотите удалить все ${this.channels.length} канал(ов)? Это действие нельзя отменить!`)) {
+        return
+      }
+
+      this.deletingAll = true
+      try {
+        const { data } = await axios.delete('/api/v1/channels')
+        
+        this.channels = []
+        
+        this.$notify({
+          title: 'Успех',
+          text: data.message || 'Все каналы удалены',
+          type: 'success'
+        })
+      } catch (error) {
+        console.error('Ошибка при удалении всех каналов:', error)
+        
+        this.$notify({
+          title: 'Ошибка',
+          text: error.response?.data?.message || 'Не удалось удалить все каналы',
+          type: 'error'
+        })
+      } finally {
+        this.deletingAll = false
       }
     }
   }
@@ -446,8 +488,13 @@ h1 {
   font-size: 12px;
 }
 
-.btn-danger:hover {
+.btn-danger:hover:not(:disabled) {
   background: #c82333;
+}
+
+.btn-danger:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .btn-outline-primary {

@@ -258,6 +258,35 @@ class ChannelController extends Controller
     }
 
     /**
+     * Удалить все каналы
+     */
+    public function destroyAll(Request $request): JsonResponse
+    {
+        // Логируем все параметры запроса
+        $this->logRequestParameters($request, 'channels/destroy-all');
+        
+        try {
+            $count = Channel::count();
+            Channel::query()->delete();
+
+            return response()->json([
+                'success' => true,
+                'message' => "Удалено каналов: {$count}",
+                'deleted_count' => $count
+            ]);
+        } catch (\Exception $e) {
+            Log::error('Delete all channels error', [
+                'error' => $e->getMessage()
+            ]);
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Ошибка при удалении всех каналов'
+            ], 500);
+        }
+    }
+
+    /**
      * Валидация данных канала
      */
     protected function validateChannel(Request $request, bool $isUpdate = false): array

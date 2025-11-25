@@ -19,6 +19,7 @@ Route::get('/deploy/status', [DeployController::class, 'status']);
 
 // Channel management routes (требуют auth) - sync ДОЛЖЕН БЫТЬ ПЕРЕД routes с {channel}
 Route::post('channels/sync', [ChannelController::class, 'sync'])->name('channels.sync');
+Route::delete('channels', [ChannelController::class, 'destroyAll'])->name('channels.destroy-all');
 
 Route::middleware('auth:api')->group(function () {
     Route::get('user', [PassportAuthController::class, 'user']);
