@@ -266,22 +266,36 @@ class ChannelController extends Controller
         $this->logRequestParameters($request, 'channels/destroy-all');
         
         try {
+            // Считаем количество ДО удаления
             $count = Channel::count();
-            Channel::query()->delete();
+            
+            Log::info('Deleting all channels', [
+                'count_before_delete' => $count
+            ]);
+            
+            // Удаляем все каналы
+            $deleted = Channel::query()->delete();
+            
+            Log::info('Channels deleted', [
+                'count_before' => $count,
+                'deleted_rows' => $deleted
+            ]);
 
             return response()->json([
                 'success' => true,
-                'message' => "Удалено каналов: {$count}",
-                'deleted_count' => $count
+                'message' => $count > 0 ? "Удалено каналов: {$count}" : "Каналов для удаления не найдено",
+                'deleted_count' => $count,
+                'deleted_rows' => $deleted
             ]);
         } catch (\Exception $e) {
             Log::error('Delete all channels error', [
-                'error' => $e->getMessage()
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
             ]);
 
             return response()->json([
                 'success' => false,
-                'message' => 'Ошибка при удалении всех каналов'
+                'message' => 'Ошибка при удалении всех каналов: ' . $e->getMessage()
             ], 500);
         }
     }
