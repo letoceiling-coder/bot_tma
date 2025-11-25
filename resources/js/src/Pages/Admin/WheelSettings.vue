@@ -205,6 +205,9 @@ const createSection = (index = 0) => ({
 
 export default {
   name: 'WheelSettingsPage',
+  components: {
+    AdminNav
+  },
   data() {
     return {
       sections: [],
