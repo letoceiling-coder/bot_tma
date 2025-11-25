@@ -1,0 +1,465 @@
+/* как играть */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+background: linear-gradient(180deg, #F8A575 0%, #FDB083 100%);
+
+
+/* image 317 */
+
+position: absolute;
+width: 375px;
+height: 812px;
+left: calc(50% - 375px/2);
+top: 0px;
+
+background: url(telegram-cloud-photo-size-2-5219672552697957428-x.jpg);
+
+
+/* Ellipse 538 */
+
+position: absolute;
+width: 488px;
+height: 488px;
+left: -55px;
+top: 484px;
+
+background: #FCAD7F;
+
+
+/* image 318 */
+
+position: absolute;
+width: 336px;
+height: 504px;
+left: calc(50% - 336px/2 + 2.5px);
+top: 315px;
+
+background: url(image.png);
+filter: drop-shadow(0px 12px 15px rgba(0, 0, 0, 0.25));
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 60px;
+height: 34px;
+left: 300px;
+top: 728px;
+
+background: #E77D65;
+border-radius: 5px;
+
+
+/* line */
+
+width: 28px;
+height: 1px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* line option */
+
+position: absolute;
+width: 28px;
+height: 1px;
+left: 16px;
+top: 16.5px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 28.02px;
+height: 0px;
+left: 16px;
+top: 16.5px;
+
+border: 2px solid #FFFFFF;
+transform: matrix(1, -0.04, 0, -1, 0, 0);
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 60px;
+height: 34px;
+left: 17px;
+top: 728px;
+
+background: #E77D65;
+border-radius: 5px;
+transform: rotate(-180deg);
+
+
+/* line */
+
+width: 28px;
+height: 1px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* line option */
+
+position: absolute;
+width: 28px;
+height: 1px;
+left: 16px;
+top: 16.5px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 28.02px;
+height: 0px;
+left: 16px;
+top: 16.5px;
+
+border: 2px solid #FFFFFF;
+transform: matrix(-1, 0.04, 0, 1, 0, 0);
+
+
+/* Frame 2164 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 60px;
+height: 12px;
+left: calc(50% - 60px/2 + 0.5px);
+top: 739px;
+
+
+
+/* Ellipse 540 */
+
+box-sizing: border-box;
+
+width: 12px;
+height: 12px;
+
+background: #E4A969;
+border: 1px solid #E77D65;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 539 */
+
+box-sizing: border-box;
+
+width: 12px;
+height: 12px;
+
+background: #E77D65;
+border: 1px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 541 */
+
+box-sizing: border-box;
+
+width: 12px;
+height: 12px;
+
+background: #E4A969;
+border: 1px solid #E77D65;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* image 319 */
+
+position: absolute;
+width: 375px;
+height: 700px;
+left: 2px;
+top: 22px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 328px;
+height: 58px;
+left: calc(50% - 328px/2 + 2.5px);
+top: 137px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+box-shadow: 0px 4px 10px rgba(255, 212, 137, 0.25);
+border-radius: 10px;
+
+
+/* занимай топ */
+
+position: absolute;
+width: 197px;
+height: 29px;
+left: calc(50% - 197px/2 + 3px);
+top: 152px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 29px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 328px;
+height: 58px;
+left: calc(50% - 328px/2 + 2.5px);
+top: 72px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+box-shadow: 0px 4px 10px rgba(255, 212, 137, 0.25);
+border-radius: 10px;
+
+
+/* зови друзей */
+
+position: absolute;
+width: 187px;
+height: 29px;
+left: calc(50% - 187px/2 + 3px);
+top: 87px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 29px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 2168 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: 26px;
+top: 202px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: calc(50% - 328px/2 + 2.5px);
+top: 202px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+border-radius: 5px;
+
+
+/* получай больше подарков */
+
+position: absolute;
+width: 220px;
+height: 16px;
+left: calc(50% - 220px/2 + 2.5px);
+top: 209px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 2166 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: 25px;
+top: 246px;
+
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: calc(50% - 328px/2 + 1.5px);
+top: 246px;
+
+background: #E5A698;
+border-radius: 5px;
+
+
+/* 1 место = 1 500 ₽ */
+
+position: absolute;
+width: 146px;
+height: 18px;
+left: calc(50% - 146px/2 + 1.5px);
+top: 252px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 2167 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: 25px;
+top: 286px;
+
+
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: calc(50% - 328px/2 + 1.5px);
+top: 286px;
+
+background: #E5A698;
+border-radius: 5px;
+
+
+/* 2 место = 1000 ₽ */
+
+position: absolute;
+width: 148px;
+height: 18px;
+left: calc(50% - 148px/2 + 2.5px);
+top: 292px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 2165 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: 25px;
+top: 326px;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+width: 328px;
+height: 30px;
+left: calc(50% - 328px/2 + 1.5px);
+top: 326px;
+
+background: #E5A698;
+border-radius: 5px;
+
+
+/* 3 место = 500 ₽ */
+
+position: absolute;
+width: 140px;
+height: 18px;
+left: calc(50% - 140px/2 + 1.5px);
+top: 332px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+
+color: #FFFFFF;
+

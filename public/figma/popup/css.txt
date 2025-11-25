@@ -1,0 +1,120 @@
+/* Frame 2165 */
+
+position: absolute;
+width: 325px;
+left: calc(50% - 325px/2);
+top: 30.3%;
+bottom: 29.56%;
+
+background: linear-gradient(8.92deg, rgba(231, 125, 101, 0.8) 23.82%, rgba(239, 182, 108, 0.8) 192.33%);
+border-radius: 15px;
+
+
+/* Секретный подарок  от кролика */
+
+position: absolute;
+width: 192px;
+height: 48px;
+left: calc(50% - 192px/2 - 0.5px);
+top: 35px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Обменяй 50 звезд на 20 прокруток рулетки и прибьтесь к своему призу */
+
+position: absolute;
+width: 231px;
+height: 34px;
+left: calc(50% - 231px/2);
+top: 93px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 88.31%;
+right: 6.15%;
+top: 5.73%;
+bottom: 88.83%;
+
+background: #FFFFFF;
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 213px;
+height: 32px;
+left: calc(50% - 213px/2);
+top: 139px;
+
+background: #E77D65;
+border-radius: 5px;
+
+
+/* text */
+
+width: 183px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Звезды спишутся автоматически */
+
+position: absolute;
+width: 183px;
+height: 14px;
+left: calc(50% - 183px/2);
+top: 9px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* image 332 */
+
+position: absolute;
+width: 140px;
+height: 211px;
+left: 195px;
+top: 150px;
+
+background: url(image.png);

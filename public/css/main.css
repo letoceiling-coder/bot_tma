@@ -1,0 +1,129 @@
+.spinner-container {
+  display: none;
+}
+
+.el-dropdown-link {
+  border: none !important;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1200px;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  overflow-x: hidden;
+  font-family: "Montserrat", serif !important;
+  font-style: normal !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.full {
+  width: 100%;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: end;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.gab-5 {
+  gap: 5px;
+}
+
+.gab-10 {
+  gap: 10px;
+}
+
+.gab-15 {
+  gap: 15px;
+}
+
+.gab-20, .gab-20-0, .gab-20-5, .gab-20-10 {
+  gap: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

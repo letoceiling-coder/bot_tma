@@ -1,0 +1,70 @@
+/* Загрузка 1 */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+background: linear-gradient(180deg, #F8A575 0%, #FDB083 100%);
+
+
+/* image 310 */
+
+position: absolute;
+width: 375px;
+height: 562px;
+left: 0px;
+top: 73px;
+
+background: url(image.png);
+
+
+/* Group 2143 */
+
+position: absolute;
+width: 260px;
+height: 6px;
+left: calc(50% - 260px/2 - 0.5px);
+top: 673px;
+
+
+
+/* Rectangle 2024 */
+
+position: absolute;
+width: 260px;
+height: 6px;
+left: calc(50% - 260px/2 - 0.5px);
+top: 673px;
+
+background: #FFB97E;
+border-radius: 10px;
+
+
+/* Rectangle 2025 */
+
+position: absolute;
+width: 62px;
+height: 6px;
+left: calc(50% - 62px/2 - 99.5px);
+top: 673px;
+
+background: #E77D65;
+border-radius: 10px;
+
+
+/* Подключаем игру… */
+
+position: absolute;
+width: 181px;
+height: 18px;
+left: calc(50% - 181px/2);
+top: 699px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+
+color: #DA5C40;
+

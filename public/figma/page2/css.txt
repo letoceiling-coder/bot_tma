@@ -1,0 +1,320 @@
+/* как играть */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+background: linear-gradient(180deg, #F8A575 0%, #FDB083 100%);
+
+
+/* image 317 */
+
+position: absolute;
+width: 375px;
+height: 812px;
+left: 1px;
+top: 0px;
+
+background: url(telegram-cloud-photo-size-2-5219672552697957428-x.jpg);
+
+
+/* Ellipse 538 */
+
+position: absolute;
+width: 488px;
+height: 488px;
+left: -56px;
+top: 601px;
+
+background: #FCAD7F;
+
+
+/* image 317 */
+
+position: absolute;
+width: 375px;
+height: 812px;
+left: calc(50% - 375px/2);
+top: 0px;
+
+background: url(telegram-cloud-photo-size-2-5219672552697957428-x.jpg);
+
+
+/* image 316 */
+
+position: absolute;
+width: 423px;
+height: 635px;
+left: calc(50% - 423px/2);
+top: 256px;
+
+background: url(image.png);
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 328px;
+height: 58px;
+left: calc(50% - 328px/2 + 1.5px);
+top: 200px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+box-shadow: 0px 4px 10px rgba(255, 212, 137, 0.25);
+border-radius: 10px;
+
+
+/* получай билеты */
+
+position: absolute;
+width: 253px;
+height: 29px;
+left: calc(50% - 253px/2 + 2px);
+top: 215px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 29px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 60px;
+height: 34px;
+left: 300px;
+top: 728px;
+
+background: #E77D65;
+border-radius: 5px;
+
+
+/* line */
+
+width: 28px;
+height: 1px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* line option */
+
+position: absolute;
+width: 28px;
+height: 1px;
+left: 16px;
+top: 16.5px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 28.02px;
+height: 0px;
+left: 16px;
+top: 16.5px;
+
+border: 2px solid #FFFFFF;
+transform: matrix(1, -0.04, 0, -1, 0, 0);
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 60px;
+height: 34px;
+left: 17px;
+top: 728px;
+
+background: #E77D65;
+border-radius: 5px;
+transform: rotate(-180deg);
+
+
+/* line */
+
+width: 28px;
+height: 1px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* line option */
+
+position: absolute;
+width: 28px;
+height: 1px;
+left: 16px;
+top: 16.5px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 28.02px;
+height: 0px;
+left: 16px;
+top: 16.5px;
+
+border: 2px solid #FFFFFF;
+transform: matrix(-1, 0.04, 0, 1, 0, 0);
+
+
+/* Frame 2164 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 60px;
+height: 12px;
+left: calc(50% - 60px/2 + 0.5px);
+top: 739px;
+
+
+
+/* Ellipse 540 */
+
+box-sizing: border-box;
+
+width: 12px;
+height: 12px;
+
+background: #E4A969;
+border: 1px solid #E77D65;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 539 */
+
+box-sizing: border-box;
+
+width: 12px;
+height: 12px;
+
+background: #E77D65;
+border: 1px solid #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 541 */
+
+box-sizing: border-box;
+
+width: 12px;
+height: 12px;
+
+background: #E4A969;
+border: 1px solid #E77D65;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* & */
+
+position: absolute;
+width: 73px;
+height: 118px;
+left: calc(50% - 73px/2 - 14px);
+top: 102px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 104.011px;
+line-height: 118px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(-15.83deg);
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 328px;
+height: 58px;
+left: calc(50% - 328px/2 + 1.5px);
+top: 80px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+box-shadow: 0px 4px 10px rgba(255, 212, 137, 0.25);
+border-radius: 10px;
+
+
+/* приглашай друзей */
+
+position: absolute;
+width: 284px;
+height: 29px;
+left: calc(50% - 284px/2 + 1.5px);
+top: 95px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 29px;
+text-align: center;
+
+color: #FFFFFF;
+

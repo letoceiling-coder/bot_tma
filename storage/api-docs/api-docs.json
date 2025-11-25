@@ -1,0 +1,1575 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "CRM для Telegram ботов API",
+        "description": "API документация для CRM системы управления Telegram ботами",
+        "contact": {
+            "email": "support@example.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "/api/v1",
+            "description": "API V1"
+        }
+    ],
+    "paths": {
+        "/folders": {
+            "get": {
+                "tags": [
+                    "Folders"
+                ],
+                "summary": "Получить список папок",
+                "description": "Возвращает список папок с возможностью фильтрации по родительской папке и пагинации",
+                "operationId": "359b9530f93593f7ad4763a8feeb7782",
+                "parameters": [
+                    {
+                        "name": "parent_id",
+                        "in": "query",
+                        "description": "ID родительской папки (null для корневых папок)",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "nullable": true
+                        }
+                    },
+                    {
+                        "name": "paginate",
+                        "in": "query",
+                        "description": "Количество элементов на странице (0 - без пагинации)",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 0
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Номер страницы",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Folder"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Folders"
+                ],
+                "summary": "Создать новую папку",
+                "description": "Создаёт новую папку в медиа-менеджере",
+                "operationId": "a17f6776f0d1c0a3965276e14b0ec7ff",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "name"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "description": "Название папки",
+                                        "type": "string",
+                                        "example": "Новая папка"
+                                    },
+                                    "parent_id": {
+                                        "description": "ID родительской папки",
+                                        "type": "integer",
+                                        "example": null,
+                                        "nullable": true
+                                    },
+                                    "slug": {
+                                        "description": "URL-slug (генерируется автоматически)",
+                                        "type": "string",
+                                        "example": "novaya-papka",
+                                        "nullable": true
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Папка успешно создана",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Folder"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Ошибка валидации"
+                    }
+                }
+            }
+        },
+        "/folders/{id}": {
+            "get": {
+                "tags": [
+                    "Folders"
+                ],
+                "summary": "Получить информацию о папке",
+                "description": "Возвращает детальную информацию о конкретной папке",
+                "operationId": "25b407039d70dadd2e2b8e3968914d10",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID папки",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Folder"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Папка не найдена"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Folders"
+                ],
+                "summary": "Обновить папку",
+                "description": "Обновляет данные папки",
+                "operationId": "40be455f942c06ac56a40e59e5b8d89a",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID папки",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": false,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "example": "Обновлённая папка"
+                                    },
+                                    "parent_id": {
+                                        "type": "integer",
+                                        "example": null,
+                                        "nullable": true
+                                    },
+                                    "position": {
+                                        "type": "integer",
+                                        "example": 1
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Папка успешно обновлена",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Folder"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Папка не найдена"
+                    },
+                    "422": {
+                        "description": "Ошибка валидации"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Folders"
+                ],
+                "summary": "Удалить папку",
+                "description": "Удаляет папку и все её содержимое (файлы и вложенные папки)",
+                "operationId": "e6eb7f200bbccb95c9eb49ca71c2e27b",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID папки",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Папка успешно удалена",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Папка успешно удалена"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Папка не найдена"
+                    },
+                    "500": {
+                        "description": "Ошибка сервера"
+                    }
+                }
+            }
+        },
+        "/folders/tree/all": {
+            "get": {
+                "tags": [
+                    "Folders"
+                ],
+                "summary": "Получить дерево всех папок",
+                "description": "Возвращает иерархическую структуру всех папок в виде дерева",
+                "operationId": "2a1a698716a7f65d245062a0380f67e6",
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Folder"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/folders/update-positions": {
+            "post": {
+                "tags": [
+                    "Folders"
+                ],
+                "summary": "Обновить позиции папок",
+                "description": "Массовое обновление позиций папок для реализации drag & drop",
+                "operationId": "bb7372ea45116ab7647ac622131a24bb",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "folders"
+                                ],
+                                "properties": {
+                                    "folders": {
+                                        "type": "array",
+                                        "items": {
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "position": {
+                                                    "type": "integer",
+                                                    "example": 1
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Позиции успешно обновлены",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Позиции папок успешно обновлены"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Ошибка валидации"
+                    },
+                    "500": {
+                        "description": "Ошибка сервера"
+                    }
+                }
+            }
+        },
+        "/media": {
+            "get": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Получить список медиа-файлов",
+                "description": "Возвращает список файлов с возможностью фильтрации, сортировки и пагинации",
+                "operationId": "604ae419b7ff4534eb3a050f20bc3505",
+                "parameters": [
+                    {
+                        "name": "folder_id",
+                        "in": "query",
+                        "description": "ID папки для фильтрации (null для корневых файлов)",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "nullable": true
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Поиск по имени файла",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "sort_by",
+                        "in": "query",
+                        "description": "Сортировка (newest, oldest, name_asc, name_desc, size_asc, size_desc)",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "default": "newest"
+                        }
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Количество элементов на странице",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 0
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Номер страницы",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Media"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Загрузить медиа-файл",
+                "description": "Загружает файл в систему с возможностью указания папки",
+                "operationId": "5bb28ff35e518d7b60c4d6ea9c7e081b",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "file"
+                                ],
+                                "properties": {
+                                    "file": {
+                                        "description": "Файл для загрузки (jpg, jpeg, png, gif, webp, svg, pdf, doc, docx, mp4, avi, mov)",
+                                        "type": "string",
+                                        "format": "binary"
+                                    },
+                                    "folder_id": {
+                                        "description": "ID папки для загрузки",
+                                        "type": "integer",
+                                        "nullable": true
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Файл успешно загружен",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Файл успешно загружен"
+                                        },
+                                        "data": {
+                                            "$ref": "#/components/schemas/Media"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Ошибка валидации"
+                    },
+                    "500": {
+                        "description": "Ошибка сервера"
+                    }
+                }
+            }
+        },
+        "/media/{id}": {
+            "get": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Получить информацию о файле",
+                "description": "Возвращает детальную информацию о конкретном медиа-файле",
+                "operationId": "bc8f2abd18e6555f1b56d6b250508683",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID файла",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Media"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Файл не найден"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Обновить медиа-файл",
+                "description": "Обновляет данные файла (перемещение в другую папку)",
+                "operationId": "aaed8b2c265aeb82dedd004a87cbd7b3",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID файла",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "folder_id": {
+                                        "description": "ID новой папки",
+                                        "type": "integer",
+                                        "nullable": true
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Файл успешно обновлён",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Файл успешно перемещён"
+                                        },
+                                        "data": {
+                                            "$ref": "#/components/schemas/Media"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Файл не найден"
+                    },
+                    "422": {
+                        "description": "Ошибка валидации"
+                    },
+                    "500": {
+                        "description": "Ошибка сервера"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Удалить файл",
+                "description": "Удаляет медиа-файл из системы и БД",
+                "operationId": "c34a81ae722b02d78a6d92fa4af39589",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID файла",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Файл успешно удалён",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Файл успешно удалён"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Файл не найден"
+                    },
+                    "500": {
+                        "description": "Ошибка сервера"
+                    }
+                }
+            }
+        },
+        "/media/{id}/restore": {
+            "post": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Восстановить файл из корзины",
+                "description": "Восстановить файл из корзины",
+                "operationId": "de31e8eaecd217e0fb217fd0ba5996c5",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Файл успешно восстановлен"
+                    }
+                }
+            }
+        },
+        "/media/trash/empty": {
+            "delete": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Очистить корзину",
+                "description": "Очистить корзину",
+                "operationId": "6613ba78afae34804288e32f8deb8bbc",
+                "responses": {
+                    "200": {
+                        "description": "Корзина успешно очищена"
+                    }
+                }
+            }
+        },
+        "/auth/register": {
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Регистрация нового пользователя",
+                "description": "Создает нового пользователя и возвращает токен доступа",
+                "operationId": "1df5a2272d28ea34b0c54ee361691294",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "name",
+                                    "email",
+                                    "password",
+                                    "password_confirmation"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "description": "Имя пользователя",
+                                        "type": "string",
+                                        "example": "Иван Иванов"
+                                    },
+                                    "email": {
+                                        "description": "Email пользователя",
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "user@example.com"
+                                    },
+                                    "password": {
+                                        "description": "Пароль (минимум 8 символов, буквы разного регистра, цифры, символы)",
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Password123!"
+                                    },
+                                    "password_confirmation": {
+                                        "description": "Подтверждение пароля",
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Password123!"
+                                    },
+                                    "role_id": {
+                                        "description": "ID роли (опционально, по умолчанию 1 - User)",
+                                        "type": "integer",
+                                        "example": 1
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Успешная регистрация",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "user": {
+                                            "$ref": "#/components/schemas/User"
+                                        },
+                                        "accessToken": {
+                                            "type": "string",
+                                            "example": "eyJ0eXAiOiJKV1QiLCJhbGc..."
+                                        },
+                                        "notify": {
+                                            "properties": {
+                                                "title": {
+                                                    "type": "string",
+                                                    "example": "Успешно"
+                                                },
+                                                "text": {
+                                                    "type": "string",
+                                                    "example": "Вы успешно зарегистрировались"
+                                                },
+                                                "status": {
+                                                    "type": "string",
+                                                    "example": "success"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Ошибка валидации",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The given data was invalid."
+                                        },
+                                        "errors": {
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Ошибка сервера",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "notify": {
+                                            "properties": {
+                                                "title": {
+                                                    "type": "string",
+                                                    "example": "Ошибка регистрации"
+                                                },
+                                                "text": {
+                                                    "type": "string",
+                                                    "example": "Произошла ошибка на сервере. Попробуйте позже."
+                                                },
+                                                "status": {
+                                                    "type": "string",
+                                                    "example": "error"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/auth/login": {
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Вход в систему",
+                "description": "Авторизует пользователя и возвращает токен доступа",
+                "operationId": "0946da348acc1471c3b8508f616cbaea",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "description": "Email пользователя",
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "user@example.com"
+                                    },
+                                    "password": {
+                                        "description": "Пароль",
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Password123!"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Успешная авторизация",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "user": {
+                                            "$ref": "#/components/schemas/User"
+                                        },
+                                        "accessToken": {
+                                            "type": "string",
+                                            "example": "eyJ0eXAiOiJKV1QiLCJhbGc..."
+                                        },
+                                        "notify": {
+                                            "properties": {
+                                                "title": {
+                                                    "type": "string",
+                                                    "example": "Успешно"
+                                                },
+                                                "text": {
+                                                    "type": "string",
+                                                    "example": "Добро пожаловать!"
+                                                },
+                                                "status": {
+                                                    "type": "string",
+                                                    "example": "success"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Неверные учетные данные",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "notify": {
+                                            "properties": {
+                                                "title": {
+                                                    "type": "string",
+                                                    "example": "Доступ запрещен"
+                                                },
+                                                "text": {
+                                                    "type": "string",
+                                                    "example": "Неверный email или пароль"
+                                                },
+                                                "status": {
+                                                    "type": "string",
+                                                    "example": "error"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/auth/update": {
+            "put": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Обновить данные пользователя",
+                "description": "Обновляет профиль текущего пользователя",
+                "operationId": "b7edca08fc324984110572b619473b49",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "Имя пользователя",
+                                        "type": "string",
+                                        "example": "Петр Петров"
+                                    },
+                                    "email": {
+                                        "description": "Email",
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "newmail@example.com"
+                                    },
+                                    "phone": {
+                                        "description": "Номер телефона",
+                                        "type": "string",
+                                        "example": "+7 999 123-45-67"
+                                    },
+                                    "password": {
+                                        "description": "Новый пароль (опционально)",
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "NewPassword123!"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Данные обновлены",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "user": {
+                                            "$ref": "#/components/schemas/User"
+                                        },
+                                        "notify": {
+                                            "properties": {
+                                                "title": {
+                                                    "type": "string",
+                                                    "example": "Успешно"
+                                                },
+                                                "text": {
+                                                    "type": "string",
+                                                    "example": "Данные обновлены"
+                                                },
+                                                "status": {
+                                                    "type": "string",
+                                                    "example": "success"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Не авторизован"
+                    },
+                    "422": {
+                        "description": "Ошибка валидации"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/auth/user": {
+            "get": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Получить данные текущего пользователя",
+                "description": "Возвращает информацию об авторизованном пользователе",
+                "operationId": "165a488cb7bb6a7a34ea90ad04b995db",
+                "responses": {
+                    "200": {
+                        "description": "Данные пользователя",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "user": {
+                                            "$ref": "#/components/schemas/User"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Не авторизован",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Unauthenticated."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/auth/logout": {
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Выход из системы",
+                "description": "Отзывает токен доступа и выходит из системы",
+                "operationId": "e01d6469550c76f36e4963da95a5cc32",
+                "responses": {
+                    "200": {
+                        "description": "Успешный выход",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "notify": {
+                                            "properties": {
+                                                "title": {
+                                                    "type": "string",
+                                                    "example": "Успешно"
+                                                },
+                                                "text": {
+                                                    "type": "string",
+                                                    "example": "Вы успешно вышли из системы"
+                                                },
+                                                "status": {
+                                                    "type": "string",
+                                                    "example": "success"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Не авторизован"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/auth/forgot-password": {
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Восстановление пароля",
+                "description": "Отправляет ссылку для восстановления пароля на email",
+                "operationId": "399d44bd40592dfcf13fb91e8a034cf1",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "description": "Email пользователя",
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "user@example.com"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ссылка отправлена",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Ссылка для восстановления пароля отправлена на ваш email"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Ошибка валидации",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "errors": {
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Folder": {
+                "title": "Folder",
+                "description": "Модель папки медиа-менеджера",
+                "required": [
+                    "id",
+                    "name",
+                    "slug"
+                ],
+                "properties": {
+                    "id": {
+                        "description": "ID папки",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "name": {
+                        "description": "Название папки",
+                        "type": "string",
+                        "example": "Общая"
+                    },
+                    "slug": {
+                        "description": "URL-slug папки",
+                        "type": "string",
+                        "example": "common"
+                    },
+                    "src": {
+                        "description": "Иконка папки",
+                        "type": "string",
+                        "example": "folder"
+                    },
+                    "parent_id": {
+                        "description": "ID родительской папки",
+                        "type": "integer",
+                        "example": null,
+                        "nullable": true
+                    },
+                    "position": {
+                        "description": "Позиция для сортировки",
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "count": {
+                        "description": "Количество файлов в папке",
+                        "type": "integer",
+                        "example": 5
+                    },
+                    "countFolder": {
+                        "description": "Количество вложенных папок",
+                        "type": "integer",
+                        "example": 2
+                    },
+                    "parent": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/Folder"
+                            }
+                        ],
+                        "nullable": true,
+                        "description": "Родительская папка"
+                    },
+                    "children": {
+                        "description": "Вложенные папки",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Folder"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "Media": {
+                "title": "Media",
+                "description": "Модель медиа-файла",
+                "required": [
+                    "id",
+                    "name",
+                    "original_name",
+                    "type",
+                    "size"
+                ],
+                "properties": {
+                    "id": {
+                        "description": "ID файла",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "name": {
+                        "description": "Сгенерированное имя файла",
+                        "type": "string",
+                        "example": "abc123_1234567890.jpg"
+                    },
+                    "original_name": {
+                        "description": "Оригинальное имя файла",
+                        "type": "string",
+                        "example": "photo.jpg"
+                    },
+                    "extension": {
+                        "description": "Расширение файла",
+                        "type": "string",
+                        "example": "jpg"
+                    },
+                    "disk": {
+                        "description": "Путь к директории файла",
+                        "type": "string",
+                        "example": "upload"
+                    },
+                    "width": {
+                        "description": "Ширина изображения (для фото)",
+                        "type": "integer",
+                        "example": 1920,
+                        "nullable": true
+                    },
+                    "height": {
+                        "description": "Высота изображения (для фото)",
+                        "type": "integer",
+                        "example": 1080,
+                        "nullable": true
+                    },
+                    "type": {
+                        "description": "Тип файла (photo, video, document)",
+                        "type": "string",
+                        "enum": [
+                            "photo",
+                            "video",
+                            "document"
+                        ],
+                        "example": "photo"
+                    },
+                    "size": {
+                        "description": "Размер файла в байтах",
+                        "type": "integer",
+                        "example": 102400
+                    },
+                    "folder_id": {
+                        "description": "ID папки",
+                        "type": "integer",
+                        "example": 1,
+                        "nullable": true
+                    },
+                    "user_id": {
+                        "description": "ID пользователя, загрузившего файл",
+                        "type": "integer",
+                        "example": 1,
+                        "nullable": true
+                    },
+                    "telegram_file_id": {
+                        "description": "file_id из Telegram",
+                        "type": "string",
+                        "example": "AgACAgIAAxkBAAIBB...",
+                        "nullable": true
+                    },
+                    "temporary": {
+                        "description": "Временный файл",
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "url": {
+                        "description": "URL файла",
+                        "type": "string",
+                        "example": "/upload/photo.jpg"
+                    },
+                    "thumbnail": {
+                        "description": "URL миниатюры (для изображений)",
+                        "type": "string",
+                        "example": "/upload/photo.jpg",
+                        "nullable": true
+                    },
+                    "created_at": {
+                        "description": "Дата создания",
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2025-11-08T12:00:00.000000Z"
+                    },
+                    "updated_at": {
+                        "description": "Дата обновления",
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2025-11-08T12:00:00.000000Z"
+                    },
+                    "folder": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/Folder"
+                            }
+                        ],
+                        "nullable": true,
+                        "description": "Папка файла"
+                    },
+                    "user": {
+                        "description": "Пользователь, загрузивший файл",
+                        "properties": {
+                            "id": {
+                                "type": "integer",
+                                "example": 1
+                            },
+                            "name": {
+                                "type": "string",
+                                "example": "Иван Иванов"
+                            }
+                        },
+                        "type": "object",
+                        "nullable": true
+                    }
+                },
+                "type": "object"
+            },
+            "User": {
+                "title": "User",
+                "description": "Модель пользователя",
+                "properties": {
+                    "id": {
+                        "description": "ID пользователя",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "name": {
+                        "description": "Имя пользователя",
+                        "type": "string",
+                        "example": "Иван Иванов"
+                    },
+                    "email": {
+                        "description": "Email пользователя",
+                        "type": "string",
+                        "format": "email",
+                        "example": "user@example.com"
+                    },
+                    "phone": {
+                        "description": "Телефон",
+                        "type": "string",
+                        "example": "+7 999 123-45-67",
+                        "nullable": true
+                    },
+                    "email_verified_at": {
+                        "description": "Дата подтверждения email",
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2024-01-15 10:30:00",
+                        "nullable": true
+                    },
+                    "role_id": {
+                        "description": "ID роли",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "role": {
+                        "$ref": "#/components/schemas/UserRole"
+                    },
+                    "created_at": {
+                        "description": "Дата создания",
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2024-01-01 12:00:00"
+                    },
+                    "updated_at": {
+                        "description": "Дата обновления",
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2024-01-15 12:00:00"
+                    },
+                    "is_admin": {
+                        "description": "Является ли администратором",
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "is_moderator": {
+                        "description": "Является ли модератором или выше",
+                        "type": "boolean",
+                        "example": false
+                    }
+                },
+                "type": "object"
+            },
+            "UserRole": {
+                "title": "UserRole",
+                "description": "Роль пользователя",
+                "properties": {
+                    "id": {
+                        "description": "ID роли",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "name": {
+                        "description": "Название роли",
+                        "type": "string",
+                        "example": "USER"
+                    },
+                    "description": {
+                        "description": "Описание роли",
+                        "type": "string",
+                        "example": "Пользователь, ограничение в доступе"
+                    },
+                    "system": {
+                        "description": "Системная роль",
+                        "type": "boolean",
+                        "example": true
+                    },
+                    "is_admin": {
+                        "description": "Роль администратора",
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "is_moderator": {
+                        "description": "Роль модератора",
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "is_user": {
+                        "description": "Обычный пользователь",
+                        "type": "boolean",
+                        "example": true
+                    },
+                    "is_developer": {
+                        "description": "Роль разработчика",
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "level": {
+                        "description": "Уровень доступа",
+                        "type": "integer",
+                        "example": 1
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "description": "Введите токен в формате: Bearer {token}",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Folders",
+            "description": "API для управления папками медиа-менеджера"
+        },
+        {
+            "name": "Media",
+            "description": "API для управления медиа-файлами"
+        },
+        {
+            "name": "Authentication",
+            "description": "Операции с аутентификацией"
+        }
+    ]
+}

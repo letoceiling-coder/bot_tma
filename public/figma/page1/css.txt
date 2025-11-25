@@ -1,0 +1,502 @@
+/* как играть */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+background: linear-gradient(180deg, #F8A575 0%, #FDB083 100%);
+
+
+/* image 317 */
+
+position: absolute;
+width: 375px;
+height: 812px;
+left: 1px;
+top: 0px;
+
+background: url(telegram-cloud-photo-size-2-5219672552697957428-x.jpg);
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 281px;
+height: 58px;
+left: calc(50% - 281px/2 + 1px);
+top: 73px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+box-shadow: 0px 4px 10px rgba(255, 212, 137, 0.25);
+border-radius: 10px;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 151px;
+height: 30px;
+left: calc(50% - 151px/2 - 64px);
+top: 202px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+border-radius: 5px;
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 281px;
+height: 30px;
+left: calc(50% - 281px/2 + 1px);
+top: 240px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+border-radius: 5px;
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 281px;
+height: 30px;
+left: calc(50% - 281px/2 + 1px);
+top: 278px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+border-radius: 5px;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 122px;
+height: 30px;
+left: calc(50% - 122px/2 + 80.5px);
+top: 202px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+border-radius: 5px;
+
+
+/* ВЫИГРЫВАЙ */
+
+position: absolute;
+width: 174px;
+height: 29px;
+left: calc(50% - 174px/2 + 0.5px);
+top: 88px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 29px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Ellipse 538 */
+
+position: absolute;
+width: 488px;
+height: 488px;
+left: -56px;
+top: 585px;
+
+background: #FCAD7F;
+
+
+/* image 314 */
+
+position: absolute;
+width: 107.43px;
+height: 56.93px;
+left: -3px;
+top: 360px;
+
+background: url(image.png);
+transform: rotate(-9.3deg);
+
+
+/* ChatGPT Image 7 нояб. 2025 г., 16_42_37 (фон удален) 1 */
+
+position: absolute;
+width: 350px;
+height: 526px;
+left: 13px;
+top: 285px;
+
+background: url(image.png);
+filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.25));
+
+
+/* до 5000 ₽ */
+
+position: absolute;
+width: 209px;
+height: 41px;
+left: calc(50% - 209px/2 + 1px);
+top: 146px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* призы от 300 ₽ */
+
+position: absolute;
+width: 124px;
+height: 16px;
+left: calc(50% - 124px/2 - 64.5px);
+top: 209px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* подарки от партнера iwowwe */
+
+position: absolute;
+width: 241px;
+height: 16px;
+left: calc(50% - 241px/2 + 1px);
+top: 247px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* секретный бокс */
+
+position: absolute;
+width: 133px;
+height: 16px;
+left: calc(50% - 133px/2 + 1px);
+top: 285px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* до 5000 ₽ */
+
+position: absolute;
+width: 81px;
+height: 16px;
+left: calc(50% - 81px/2 + 80px);
+top: 209px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 14 */
+
+position: absolute;
+width: 104.07px;
+height: 156.11px;
+left: 280px;
+top: 346px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 16_03_11 (фон удален).png);
+transform: rotate(15deg);
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 60px;
+height: 34px;
+left: 300px;
+top: 727px;
+
+background: #E77D65;
+border-radius: 5px;
+
+
+/* line */
+
+width: 28px;
+height: 1px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* line option */
+
+position: absolute;
+width: 28px;
+height: 1px;
+left: 16px;
+top: 16.5px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 28.02px;
+height: 0px;
+left: 16px;
+top: 16.5px;
+
+border: 2px solid #FFFFFF;
+transform: matrix(1, -0.04, 0, -1, 0, 0);
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 60px;
+height: 34px;
+left: 17px;
+top: 727px;
+
+background: #E77D65;
+border-radius: 5px;
+transform: rotate(-180deg);
+
+
+/* line */
+
+width: 28px;
+height: 1px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* line option */
+
+position: absolute;
+width: 28px;
+height: 1px;
+left: 16px;
+top: 16.5px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 28.02px;
+height: 0px;
+left: 16px;
+top: 16.5px;
+
+border: 2px solid #FFFFFF;
+transform: matrix(-1, 0.04, 0, 1, 0, 0);
+
+
+/* Group 2164 */
+
+position: absolute;
+width: 60px;
+height: 12px;
+left: calc(50% - 60px/2 + 0.5px);
+top: 738px;
+
+
+
+/* Ellipse 539 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 158px;
+top: 738px;
+
+background: #E77D65;
+border: 1px solid #FFFFFF;
+
+
+/* Ellipse 540 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 182px;
+top: 738px;
+
+background: #E4A969;
+border: 1px solid #E77D65;
+
+
+/* Ellipse 541 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 206px;
+top: 738px;
+
+background: #E4A969;
+border: 1px solid #E77D65;
+
+
+/* Group */
+
+position: absolute;
+left: 9.87%;
+right: 74.67%;
+top: 52.34%;
+bottom: 41.49%;
+
+transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 11.04%;
+right: 81.46%;
+top: 52.85%;
+bottom: 40.99%;
+
+background: #EF2787;
+transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 18.48%;
+right: 79.81%;
+top: 53.19%;
+bottom: 46%;
+
+background: #000000;
+transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 10.35%;
+right: 88.56%;
+top: 53.95%;
+bottom: 43.99%;
+
+background: #000000;
+transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 18.59%;
+right: 74.22%;
+top: 53.91%;
+bottom: 43.83%;
+
+background: #000000;
+transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 10.87%;
+right: 87.47%;
+top: 56.19%;
+bottom: 43.04%;
+
+background: #000000;
+transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 19.49%;
+right: 77.23%;
+top: 56.51%;
+bottom: 41.26%;
+
+background: #000000;
+transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);

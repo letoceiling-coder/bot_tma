@@ -1,0 +1,1037 @@
+/* Колесо  */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+background: linear-gradient(180deg, #F8A575 0%, #FDB083 100%);
+
+
+/* Group 2077 */
+
+position: absolute;
+width: 247px;
+height: 49px;
+left: calc(50% - 247px/2);
+top: 164px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 247px;
+height: 49px;
+left: calc(50% - 247px/2);
+top: 164px;
+
+background: #BBBBBB;
+backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+
+/* logotype */
+
+position: absolute;
+width: 103px;
+height: 32px;
+left: 16px;
+top: 40px;
+
+
+
+/* logo */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 16px;
+top: 40px;
+
+background: #000000;
+border-radius: 1000px;
+
+
+/* Rectangle 2026 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+background: url(ChatGPT Image 6 нояб. 2025 г., 16_52_53.png);
+border: 1px solid #F7785B;
+border-radius: 1000px;
+
+
+/* username */
+
+position: absolute;
+width: 61px;
+height: 14px;
+left: 58px;
+top: 49px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 117px;
+height: 32px;
+left: 242px;
+top: 40px;
+
+background: #E77D65;
+border-radius: 5px;
+
+
+/* text */
+
+width: 65px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Как играть? */
+
+position: absolute;
+width: 65px;
+height: 14px;
+left: 15px;
+top: 9px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* line */
+
+width: 14px;
+height: 0px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* line option */
+
+position: absolute;
+width: 14px;
+height: 0px;
+left: 88px;
+top: 16px;
+
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 14px;
+height: 0px;
+left: 88px;
+top: 16px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Новый билет через 17:12 */
+
+position: absolute;
+width: 203px;
+height: 21px;
+left: calc(50% - 203px/2);
+top: 178px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 2146 */
+
+position: absolute;
+width: 344px;
+height: 340px;
+left: 15px;
+top: 239px;
+
+
+
+/* ChatGPT Image 7 нояб. 2025 г., 10_41_58 (фон удален) 2 */
+
+position: absolute;
+width: 344px;
+height: 340px;
+left: 15px;
+top: 239px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 10_41_58 (фон удален).png);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 370.5px;
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 13 */
+
+position: absolute;
+width: 49.31px;
+height: 73.97px;
+left: 242.78px;
+top: 315.82px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 16_03_11 (фон удален).png);
+transform: rotate(-120deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 6 */
+
+position: absolute;
+width: 49.31px;
+height: 73.97px;
+left: 242.78px;
+top: 315.82px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 16_03_11 (фон удален).png);
+transform: rotate(-120deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 14 */
+
+position: absolute;
+width: 49.31px;
+height: 73.97px;
+left: 41px;
+top: 383px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 16_03_11 (фон удален).png);
+transform: rotate(88.38deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 2 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 162px;
+top: 485px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 15_44_14 (фон удален).png);
+transform: rotate(2.42deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 10 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 38.85px;
+top: 318.3px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 15_58_42 (фон удален).png);
+transform: rotate(117.17deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 3 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 206px;
+top: 460px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 13_08_02-Photoroom.png);
+transform: rotate(-32.8deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 15 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 89.19px;
+top: 461.48px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 13_08_02-Photoroom.png);
+transform: rotate(32.91deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 11 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 88px;
+top: 270px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 13_08_02-Photoroom.png);
+transform: rotate(148.02deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 7 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 209px;
+top: 273px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 13_08_02-Photoroom.png);
+transform: rotate(-149.79deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 5 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 256.7px;
+top: 381px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 13_08_02-Photoroom.png);
+transform: rotate(-95.36deg);
+
+
+/* ChatGPT Image 6 нояб. 2025 г., 18_54_45 (фон удален) 4 */
+
+position: absolute;
+width: 46.99px;
+height: 70.48px;
+left: 242.16px;
+top: 427px;
+
+background: url(ChatGPT Image 7 нояб. 2025 г., 15_58_42 (фон удален).png);
+transform: rotate(-58.14deg);
+
+
+/* 0 */
+
+position: absolute;
+width: 12px;
+height: 16px;
+left: 140px;
+top: 461px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(45deg);
+
+
+/* 🎁 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 112px;
+top: 402px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* 🎁 */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 240px;
+top: 368px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(-115.79deg);
+
+
+/* 300 */
+
+position: absolute;
+width: 31px;
+height: 16px;
+left: 179px;
+top: 450px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(-89.96deg);
+
+
+/* 500 */
+
+position: absolute;
+width: 31px;
+height: 16px;
+left: 110px;
+top: 364px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(24.8deg);
+
+
+/* 0 */
+
+position: absolute;
+width: 12px;
+height: 16px;
+left: 212px;
+top: 460px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(-128.95deg);
+
+
+/* 0 */
+
+position: absolute;
+width: 12px;
+height: 16px;
+left: 139.29px;
+top: 335.31px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(141.53deg);
+
+
+/* 0 */
+
+position: absolute;
+width: 12px;
+height: 16px;
+left: 219.11px;
+top: 340.52px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(30deg);
+
+
+/* 0 */
+
+position: absolute;
+width: 12px;
+height: 16px;
+left: 244px;
+top: 403px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(168.49deg);
+
+
+/* 500 */
+
+position: absolute;
+width: 31px;
+height: 16px;
+left: 222px;
+top: 425px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+transform: rotate(-154.28deg);
+
+
+/* Group 2171 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: 16px;
+top: 729px;
+
+
+
+/* Group 2127 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: 16px;
+top: 729px;
+
+
+
+/* Group 2076 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: 16px;
+top: 729px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: calc(50% - 343px/2);
+top: 729px;
+
+background: #E77D65;
+backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+
+/* Group 2169 */
+
+position: absolute;
+width: 270px;
+height: 39px;
+left: calc(50% - 270px/2 - 0.5px);
+top: 740px;
+
+
+
+/* Group 2152 */
+
+position: absolute;
+width: 34px;
+height: 39px;
+left: 52px;
+top: 740px;
+
+
+
+/* Group 2145 */
+
+position: absolute;
+width: 34px;
+height: 12px;
+left: calc(50% - 34px/2 - 118.5px);
+top: 767px;
+
+
+
+/* Колесо */
+
+position: absolute;
+width: 34px;
+height: 12px;
+left: calc(50% - 34px/2 - 118.5px);
+top: 767px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+
+color: #FFD489;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 15.2%;
+right: 78.4%;
+top: 91.13%;
+bottom: 5.91%;
+
+border: 2px solid #FFD489;
+
+
+/* Group 2151 */
+
+position: absolute;
+width: 33px;
+height: 39px;
+left: 176px;
+top: 740px;
+
+
+
+/* Друзья */
+
+position: absolute;
+width: 33px;
+height: 12px;
+left: calc(50% - 33px/2 + 5px);
+top: 767px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 48.27%;
+right: 45.6%;
+top: 91.13%;
+bottom: 5.91%;
+
+background: #FFFFFF;
+
+
+/* Group 2153 */
+
+position: absolute;
+width: 23px;
+height: 39px;
+left: 299px;
+top: 740px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 79.73%;
+right: 14.13%;
+top: 91.63%;
+bottom: 7.51%;
+
+background: #FFFFFF;
+
+
+/* Group 2150 */
+
+position: absolute;
+width: 17px;
+height: 39px;
+left: 301px;
+top: 740px;
+
+
+
+/* Топ */
+
+position: absolute;
+width: 17px;
+height: 12px;
+left: calc(50% - 17px/2 + 122px);
+top: 767px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 80.53%;
+right: 15.47%;
+top: 91.13%;
+bottom: 5.91%;
+
+background: #FFFFFF;
+
+
+/* Group 2148 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: 16px;
+top: 603px;
+
+
+
+/* Group 2128 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: calc(50% - 343px/2);
+top: 603px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: calc(50% - 343px/2);
+top: 603px;
+
+background: linear-gradient(8.92deg, #E77D65 23.82%, #EFB66C 192.33%);
+box-shadow: 0px 4px 4px rgba(255, 212, 137, 0.25);
+border-radius: 10px;
+
+
+/* Вращать колесо */
+
+position: absolute;
+width: 149px;
+height: 24px;
+left: calc(50% - 149px/2);
+top: 619px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* подарок */
+
+position: absolute;
+width: 51px;
+height: 11px;
+left: calc(50% - 51px/2 + 152px);
+top: 153px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 11px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* image 319 */
+
+position: absolute;
+width: 47px;
+height: 69px;
+left: 315px;
+top: 82px;
+
+background: url(image.png);
+
+
+/* image 314 */
+
+position: absolute;
+width: 63.53px;
+height: 33.66px;
+left: 87px;
+top: 405px;
+
+background: url(image.png);
+filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+transform: rotate(-33.28deg);
+
+
+/* image 320 */
+
+position: absolute;
+width: 63.53px;
+height: 33.66px;
+left: 162px;
+top: 315px;
+
+background: url(image.png);
+filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+transform: rotate(-90deg);
+
+
+/* Group */
+
+position: absolute;
+left: 16.07%;
+right: 74.4%;
+top: 54.86%;
+bottom: 41.34%;
+
+transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 16.71%;
+right: 78.67%;
+top: 55.82%;
+bottom: 40.38%;
+
+background: #EF2787;
+transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 20.96%;
+right: 77.99%;
+top: 55.85%;
+bottom: 43.65%;
+
+background: #000000;
+transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 16.6%;
+right: 82.74%;
+top: 57.16%;
+bottom: 41.57%;
+
+background: #000000;
+transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 21.55%;
+right: 74.02%;
+top: 55.72%;
+bottom: 42.89%;
+
+background: #000000;
+transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 17.96%;
+right: 81.02%;
+top: 58.34%;
+bottom: 41.18%;
+
+background: #000000;
+transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 23.15%;
+right: 74.83%;
+top: 57.51%;
+bottom: 41.11%;
+
+background: #000000;
+transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+
+
+/* Group */
+
+position: absolute;
+left: 47.47%;
+right: 43.92%;
+top: 34.85%;
+bottom: 61.71%;
+
+transform: matrix(0.04, -1, -1, -0.04, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 47.49%;
+right: 48.33%;
+top: 36.59%;
+bottom: 59.97%;
+
+background: #EF2787;
+transform: matrix(0.04, -1, -1, -0.04, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 48.21%;
+right: 50.84%;
+top: 36.2%;
+bottom: 63.35%;
+
+background: #000000;
+transform: matrix(0.04, -1, -1, -0.04, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 48.14%;
+right: 51.25%;
+top: 38.49%;
+bottom: 60.36%;
+
+background: #000000;
+transform: matrix(0.04, -1, -1, -0.04, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 49.56%;
+right: 46.44%;
+top: 34.89%;
+bottom: 63.86%;
+
+background: #000000;
+transform: matrix(0.04, -1, -1, -0.04, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 50.9%;
+right: 48.17%;
+top: 38.46%;
+bottom: 61.11%;
+
+background: #000000;
+transform: matrix(0.04, -1, -1, -0.04, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 52.38%;
+right: 45.79%;
+top: 35.92%;
+bottom: 62.84%;
+
+background: #000000;
+transform: matrix(0.04, -1, -1, -0.04, 0, 0);

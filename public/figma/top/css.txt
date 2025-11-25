@@ -1,0 +1,1601 @@
+/* Топы */
+
+position: relative;
+width: 375px;
+height: 812px;
+
+/* 1212 */
+background: linear-gradient(6.56deg, #E77D65 121.4%, #EFB66C 309.78%);
+
+
+/* image 317 */
+
+position: absolute;
+width: 375px;
+height: 812px;
+left: calc(50% - 375px/2);
+top: 0px;
+
+background: url(telegram-cloud-photo-size-2-5219672552697957427-w.jpg);
+
+
+/* Group 2171 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: 16px;
+top: 729px;
+
+
+
+/* Group 2127 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: 16px;
+top: 729px;
+
+
+
+/* Group 2076 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: 16px;
+top: 729px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 343px;
+height: 58px;
+left: calc(50% - 343px/2);
+top: 729px;
+
+background: #E77D65;
+backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+
+/* Group 2169 */
+
+position: absolute;
+width: 270px;
+height: 39px;
+left: calc(50% - 270px/2 - 0.5px);
+top: 740px;
+
+
+
+/* Group 2152 */
+
+position: absolute;
+width: 34px;
+height: 39px;
+left: 52px;
+top: 740px;
+
+
+
+/* Group 2145 */
+
+position: absolute;
+width: 34px;
+height: 12px;
+left: calc(50% - 34px/2 - 118.5px);
+top: 767px;
+
+
+
+/* Колесо */
+
+position: absolute;
+width: 34px;
+height: 12px;
+left: calc(50% - 34px/2 - 118.5px);
+top: 767px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 15.2%;
+right: 78.4%;
+top: 91.13%;
+bottom: 5.91%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Group 2151 */
+
+position: absolute;
+width: 33px;
+height: 39px;
+left: 176px;
+top: 740px;
+
+
+
+/* Друзья */
+
+position: absolute;
+width: 33px;
+height: 12px;
+left: calc(50% - 33px/2 + 5px);
+top: 767px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 48.27%;
+right: 45.6%;
+top: 91.13%;
+bottom: 5.91%;
+
+background: #FFFFFF;
+
+
+/* Group 2153 */
+
+position: absolute;
+width: 23px;
+height: 39px;
+left: 299px;
+top: 740px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 79.73%;
+right: 14.13%;
+top: 91.63%;
+bottom: 7.51%;
+
+background: #FFD489;
+
+
+/* Group 2150 */
+
+position: absolute;
+width: 17px;
+height: 39px;
+left: 301px;
+top: 740px;
+
+
+
+/* Топ */
+
+position: absolute;
+width: 17px;
+height: 12px;
+left: calc(50% - 17px/2 + 122px);
+top: 767px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+
+color: #FFD489;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 80.53%;
+right: 15.47%;
+top: 91.13%;
+bottom: 5.91%;
+
+background: #FFD489;
+
+
+/* logotype */
+
+position: absolute;
+width: 103px;
+height: 32px;
+left: 16px;
+top: 40px;
+
+
+
+/* logo */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 16px;
+top: 40px;
+
+background: #000000;
+border-radius: 1000px;
+
+
+/* Rectangle 2026 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+background: url(ChatGPT Image 6 нояб. 2025 г., 16_52_53.png);
+border: 1px solid #F7785B;
+border-radius: 1000px;
+
+
+/* username */
+
+position: absolute;
+width: 61px;
+height: 14px;
+left: 58px;
+top: 49px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* how to play button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 9px 15px;
+gap: 8px;
+
+position: absolute;
+width: 148px;
+height: 32px;
+left: 211px;
+top: 40px;
+
+background: #E77D65;
+border-radius: 5px;
+
+
+/* text */
+
+width: 98px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Пригласить друга */
+
+position: absolute;
+width: 98px;
+height: 14px;
+left: 15px;
+top: 9px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 2176 */
+
+width: 12px;
+height: 13.33px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 81.76%;
+right: 11.22%;
+top: 29.17%;
+bottom: 34.25%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 83.38%;
+right: 10.14%;
+top: 36.7%;
+bottom: 29.17%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 343px;
+height: 200px;
+left: calc(50% - 343px/2);
+top: 112px;
+
+background: #E77D65;
+box-shadow: 0px 4px 10px rgba(255, 212, 137, 0.25);
+border-radius: 10px;
+
+
+/* image 325 */
+
+position: absolute;
+width: 212px;
+height: 192px;
+left: 188px;
+top: 120px;
+
+background: url(image.png);
+
+
+/* image 330 */
+
+position: absolute;
+width: 147px;
+height: 26px;
+left: 31px;
+top: 185px;
+
+background: url(image.png);
+
+
+/* image 331 */
+
+position: absolute;
+width: 86px;
+height: 27px;
+left: 29px;
+top: 211px;
+
+background: url(image.png);
+
+
+/* image 329 */
+
+position: absolute;
+width: 51px;
+height: 39px;
+left: 38px;
+top: 122px;
+
+background: url(image.png);
+
+
+/* image 327 */
+
+position: absolute;
+width: 51px;
+height: 39px;
+left: 92px;
+top: 146px;
+
+background: url(image.png);
+filter: blur(2px);
+
+
+/* image 328 */
+
+position: absolute;
+width: 51px;
+height: 39px;
+left: 146px;
+top: 131px;
+
+background: url(image.png);
+filter: blur(2px);
+
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 152px;
+height: 34px;
+left: calc(50% - 152px/2 - 80.5px);
+top: 242px;
+
+background: linear-gradient(90deg, #FCAD7F 0%, #E5867A 100%);
+border: 1px solid #E77D65;
+box-shadow: 0px 4px 10px rgba(255, 212, 137, 0.25);
+border-radius: 5px;
+
+
+/* получай 5000 ₽ */
+
+position: absolute;
+width: 112px;
+height: 14px;
+left: calc(50% - 112px/2 - 80.5px);
+top: 252px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* ТОП ИГРОКОВ */
+
+position: absolute;
+width: 116px;
+height: 18px;
+left: calc(50% - 116px/2 + 0.5px);
+top: 332px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* подарочной картой каждый месяц */
+
+position: absolute;
+width: 184px;
+height: 14px;
+left: calc(50% - 184px/2 - 64.5px);
+top: 281px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+
+
+
+/* Group 2180 */
+
+position: absolute;
+width: 345px;
+height: 53px;
+left: 16px;
+top: 366px;
+
+
+
+/* Group 2178 */
+
+position: absolute;
+width: 345px;
+height: 48px;
+left: 16px;
+top: 366px;
+
+
+
+/* Rectangle 2028 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 16px;
+top: 366px;
+
+background: url(image.png);
+border-radius: 222px;
+
+
+/* Group 2177 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 394px;
+
+
+
+/* Rectangle 2029 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 394px;
+
+/* фон */
+background: linear-gradient(8.92deg, #E77D65 23.82%, #EFB66C 192.33%);
+border-radius: 222px;
+
+
+/* 1 */
+
+position: absolute;
+width: 20px;
+height: 14px;
+left: calc(50% - 20px/2 - 132.5px);
+top: 396px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 44px;
+height: 14px;
+left: 77px;
+top: 381px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+
+
+
+/* Group 2179 */
+
+position: absolute;
+width: 109px;
+height: 24px;
+left: 252px;
+top: 376px;
+
+
+
+/* Rectangle 2029 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 53px;
+height: 24px;
+left: calc(50% - 53px/2 + 147px);
+top: 376px;
+
+background: linear-gradient(90deg, #FCAD7F 0%, #E5867A 100%);
+border: 0.697368px solid #E77D65;
+box-shadow: 0px 2.78947px 6.97368px rgba(255, 212, 137, 0.25);
+border-radius: 5px;
+
+
+/* 5000 ₽ */
+
+position: absolute;
+width: 34px;
+height: 9px;
+left: calc(50% - 34px/2 + 147.5px);
+top: 382.97px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 8.36842px;
+line-height: 9px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 278px;
+top: 379px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 67.2%;
+right: 27.47%;
+top: 46.92%;
+bottom: 51.35%;
+
+background: #FFFFFF;
+
+
+/* Line 5 */
+
+position: absolute;
+width: 343px;
+height: 0px;
+left: 16px;
+top: 419px;
+
+border: 1px solid #F0A08D;
+
+
+/* Group 2181 */
+
+position: absolute;
+width: 345px;
+height: 53px;
+left: 16px;
+top: 424px;
+
+
+
+/* Group 2178 */
+
+position: absolute;
+width: 345px;
+height: 48px;
+left: 16px;
+top: 424px;
+
+
+
+/* Rectangle 2028 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 16px;
+top: 424px;
+
+background: url(image.png);
+border-radius: 222px;
+
+
+/* Group 2177 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 452px;
+
+
+
+/* Rectangle 2029 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 452px;
+
+/* фон */
+background: linear-gradient(8.92deg, #E77D65 23.82%, #EFB66C 192.33%);
+border-radius: 222px;
+
+
+/* 2 */
+
+position: absolute;
+width: 20px;
+height: 14px;
+left: calc(50% - 20px/2 - 132.5px);
+top: 454px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 44px;
+height: 14px;
+left: 77px;
+top: 439px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+
+
+
+/* Group 2179 */
+
+position: absolute;
+width: 109px;
+height: 24px;
+left: 252px;
+top: 434px;
+
+
+
+/* Rectangle 2029 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 53px;
+height: 24px;
+left: calc(50% - 53px/2 + 147px);
+top: 434px;
+
+background: linear-gradient(90deg, #FCAD7F 0%, #E5867A 100%);
+border: 0.697368px solid #E77D65;
+box-shadow: 0px 2.78947px 6.97368px rgba(255, 212, 137, 0.25);
+border-radius: 5px;
+
+
+/* 5000 ₽ */
+
+position: absolute;
+width: 34px;
+height: 9px;
+left: calc(50% - 34px/2 + 147.5px);
+top: 440.97px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 8.36842px;
+line-height: 9px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 278px;
+top: 437px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 67.2%;
+right: 27.47%;
+top: 54.06%;
+bottom: 44.21%;
+
+background: #FFFFFF;
+
+
+/* Line 5 */
+
+position: absolute;
+width: 343px;
+height: 0px;
+left: 16px;
+top: 477px;
+
+border: 1px solid #F0A08D;
+
+
+/* Group 2182 */
+
+position: absolute;
+width: 345px;
+height: 53px;
+left: 16px;
+top: 482px;
+
+
+
+/* Group 2178 */
+
+position: absolute;
+width: 345px;
+height: 48px;
+left: 16px;
+top: 482px;
+
+
+
+/* Rectangle 2028 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 16px;
+top: 482px;
+
+background: url(image.png);
+border-radius: 222px;
+
+
+/* Group 2177 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 510px;
+
+
+
+/* Rectangle 2029 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 510px;
+
+/* фон */
+background: linear-gradient(8.92deg, #E77D65 23.82%, #EFB66C 192.33%);
+border-radius: 222px;
+
+
+/* 3 */
+
+position: absolute;
+width: 20px;
+height: 14px;
+left: calc(50% - 20px/2 - 132.5px);
+top: 512px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 44px;
+height: 14px;
+left: 77px;
+top: 497px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+
+
+
+/* Group 2179 */
+
+position: absolute;
+width: 109px;
+height: 24px;
+left: 252px;
+top: 492px;
+
+
+
+/* Rectangle 2029 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 53px;
+height: 24px;
+left: calc(50% - 53px/2 + 147px);
+top: 492px;
+
+background: linear-gradient(90deg, #FCAD7F 0%, #E5867A 100%);
+border: 0.697368px solid #E77D65;
+box-shadow: 0px 2.78947px 6.97368px rgba(255, 212, 137, 0.25);
+border-radius: 5px;
+
+
+/* 5000 ₽ */
+
+position: absolute;
+width: 34px;
+height: 9px;
+left: calc(50% - 34px/2 + 147.5px);
+top: 498.97px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 8.36842px;
+line-height: 9px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 278px;
+top: 495px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 67.2%;
+right: 27.47%;
+top: 61.21%;
+bottom: 37.07%;
+
+background: #FFFFFF;
+
+
+/* Line 5 */
+
+position: absolute;
+width: 343px;
+height: 0px;
+left: 16px;
+top: 535px;
+
+border: 1px solid #F0A08D;
+
+
+/* Group 2183 */
+
+position: absolute;
+width: 345px;
+height: 53px;
+left: 16px;
+top: 540px;
+
+
+
+/* Group 2178 */
+
+position: absolute;
+width: 345px;
+height: 48px;
+left: 16px;
+top: 540px;
+
+
+
+/* Rectangle 2028 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 16px;
+top: 540px;
+
+background: url(image.png);
+border-radius: 222px;
+
+
+/* Group 2177 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 568px;
+
+
+
+/* Rectangle 2029 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 568px;
+
+/* фон */
+background: linear-gradient(8.92deg, #E77D65 23.82%, #EFB66C 192.33%);
+border-radius: 222px;
+
+
+/* 4 */
+
+position: absolute;
+width: 20px;
+height: 14px;
+left: calc(50% - 20px/2 - 132.5px);
+top: 570px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 44px;
+height: 14px;
+left: 77px;
+top: 555px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+
+
+
+/* Group 2179 */
+
+position: absolute;
+width: 109px;
+height: 24px;
+left: 252px;
+top: 550px;
+
+
+
+/* Rectangle 2029 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 53px;
+height: 24px;
+left: calc(50% - 53px/2 + 147px);
+top: 550px;
+
+background: linear-gradient(90deg, #FCAD7F 0%, #E5867A 100%);
+border: 0.697368px solid #E77D65;
+box-shadow: 0px 2.78947px 6.97368px rgba(255, 212, 137, 0.25);
+border-radius: 5px;
+
+
+/* 5000 ₽ */
+
+position: absolute;
+width: 34px;
+height: 9px;
+left: calc(50% - 34px/2 + 147.5px);
+top: 556.97px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 8.36842px;
+line-height: 9px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 278px;
+top: 553px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 67.2%;
+right: 27.47%;
+top: 68.35%;
+bottom: 29.93%;
+
+background: #FFFFFF;
+
+
+/* Line 5 */
+
+position: absolute;
+width: 343px;
+height: 0px;
+left: 16px;
+top: 593px;
+
+border: 1px solid #F0A08D;
+
+
+/* Group 2184 */
+
+position: absolute;
+width: 345px;
+height: 53px;
+left: 16px;
+top: 598px;
+
+
+
+/* Group 2178 */
+
+position: absolute;
+width: 345px;
+height: 48px;
+left: 16px;
+top: 598px;
+
+
+
+/* Rectangle 2028 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 16px;
+top: 598px;
+
+background: url(image.png);
+border-radius: 222px;
+
+
+/* Group 2177 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 626px;
+
+
+
+/* Rectangle 2029 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 626px;
+
+/* фон */
+background: linear-gradient(8.92deg, #E77D65 23.82%, #EFB66C 192.33%);
+border-radius: 222px;
+
+
+/* 5 */
+
+position: absolute;
+width: 20px;
+height: 14px;
+left: calc(50% - 20px/2 - 132.5px);
+top: 628px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 44px;
+height: 14px;
+left: 77px;
+top: 613px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+
+
+
+/* Group 2179 */
+
+position: absolute;
+width: 109px;
+height: 24px;
+left: 252px;
+top: 608px;
+
+
+
+/* Rectangle 2029 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 53px;
+height: 24px;
+left: calc(50% - 53px/2 + 147px);
+top: 608px;
+
+background: linear-gradient(90deg, #FCAD7F 0%, #E5867A 100%);
+border: 0.697368px solid #E77D65;
+box-shadow: 0px 2.78947px 6.97368px rgba(255, 212, 137, 0.25);
+border-radius: 5px;
+
+
+/* 5000 ₽ */
+
+position: absolute;
+width: 34px;
+height: 9px;
+left: calc(50% - 34px/2 + 147.5px);
+top: 614.97px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 8.36842px;
+line-height: 9px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 278px;
+top: 611px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 67.2%;
+right: 27.47%;
+top: 75.49%;
+bottom: 22.78%;
+
+background: #FFFFFF;
+
+
+/* Line 5 */
+
+position: absolute;
+width: 343px;
+height: 0px;
+left: 16px;
+top: 651px;
+
+border: 1px solid #F0A08D;
+
+
+/* Group 2185 */
+
+position: absolute;
+width: 345px;
+height: 53px;
+left: 16px;
+top: 656px;
+
+
+
+/* Group 2178 */
+
+position: absolute;
+width: 345px;
+height: 48px;
+left: 16px;
+top: 656px;
+
+
+
+/* Rectangle 2028 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 16px;
+top: 656px;
+
+background: url(image.png);
+border-radius: 222px;
+
+
+/* Group 2177 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 684px;
+
+
+
+/* Rectangle 2029 */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 45px;
+top: 684px;
+
+/* фон */
+background: linear-gradient(8.92deg, #E77D65 23.82%, #EFB66C 192.33%);
+border-radius: 222px;
+
+
+/* 6 */
+
+position: absolute;
+width: 20px;
+height: 14px;
+left: calc(50% - 20px/2 - 132.5px);
+top: 686px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 44px;
+height: 14px;
+left: 77px;
+top: 671px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+
+
+
+/* Group 2179 */
+
+position: absolute;
+width: 109px;
+height: 24px;
+left: 252px;
+top: 666px;
+
+
+
+/* Rectangle 2029 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 53px;
+height: 24px;
+left: calc(50% - 53px/2 + 147px);
+top: 666px;
+
+background: linear-gradient(90deg, #FCAD7F 0%, #E5867A 100%);
+border: 0.697368px solid #E77D65;
+box-shadow: 0px 2.78947px 6.97368px rgba(255, 212, 137, 0.25);
+border-radius: 5px;
+
+
+/* 5000 ₽ */
+
+position: absolute;
+width: 34px;
+height: 9px;
+left: calc(50% - 34px/2 + 147.5px);
+top: 672.97px;
+
+font-family: 'NEXT ART';
+font-style: normal;
+font-weight: 700;
+font-size: 8.36842px;
+line-height: 9px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* username */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 278px;
+top: 669px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 67.2%;
+right: 27.47%;
+top: 82.64%;
+bottom: 15.64%;
+
+background: #FFFFFF;
+
+
+/* Line 5 */
+
+position: absolute;
+width: 343px;
+height: 0px;
+left: 16px;
+top: 709px;
+
+border: 1px solid #F0A08D;
