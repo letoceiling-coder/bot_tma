@@ -300,7 +300,7 @@ export default {
 
       this.deletingAll = true
       try {
-        const { data } = await axios.delete('/api/v1/channels')
+        const { data } = await axios.delete('/api/v1/channels/all')
         
         this.channels = []
         

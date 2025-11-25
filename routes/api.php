@@ -18,8 +18,9 @@ Route::post('/deploy', [DeployController::class, 'deploy'])->middleware('throttl
 Route::get('/deploy/status', [DeployController::class, 'status']);
 
 // Channel management routes (требуют auth) - sync ДОЛЖЕН БЫТЬ ПЕРЕД routes с {channel}
+// ВАЖНО: destroyAll должен быть ПЕРЕД routes с {channel}, иначе Laravel будет пытаться сопоставить с параметром
 Route::post('channels/sync', [ChannelController::class, 'sync'])->name('channels.sync');
-Route::delete('channels', [ChannelController::class, 'destroyAll'])->name('channels.destroy-all');
+Route::delete('channels/all', [ChannelController::class, 'destroyAll'])->name('channels.destroy-all');
 
 Route::middleware('auth:api')->group(function () {
     Route::get('user', [PassportAuthController::class, 'user']);
