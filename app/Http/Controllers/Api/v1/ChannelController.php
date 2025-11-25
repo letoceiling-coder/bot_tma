@@ -7,6 +7,7 @@ use App\Http\Controllers\Traits\LogsRequestParameters;
 use App\Models\Channel;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class ChannelController extends Controller
@@ -266,15 +267,16 @@ class ChannelController extends Controller
         $this->logRequestParameters($request, 'channels/destroy-all');
         
         try {
-            // Считаем количество ДО удаления
-            $count = Channel::count();
+            // Считаем количество ДО удаления через прямой запрос к БД
+            $count = DB::table('channels')->count();
             
             Log::info('Deleting all channels', [
-                'count_before_delete' => $count
+                'count_before_delete' => $count,
+                'method' => 'DB::table()->delete()'
             ]);
             
-            // Удаляем все каналы
-            $deleted = Channel::query()->delete();
+            // Принудительно удаляем все каналы через DB::table для гарантии
+            $deleted = DB::table('channels')->delete();
             
             Log::info('Channels deleted', [
                 'count_before' => $count,
