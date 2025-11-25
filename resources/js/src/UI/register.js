@@ -18,14 +18,14 @@
  * MediaManager - главный компонент управления медиафайлами
  * Позволяет загружать, просматривать и выбирать медиафайлы
  */
-import Media from '/resources/js/src/UI/Media/index.vue';
+import Media from './Media/index.vue';
 
 /**
  * BtnMedia - кнопка для открытия менеджера медиафайлов
  * Используется в формах для выбора изображений
  */
-import BtnMedia from '/resources/js/src/UI/Media/components/btn-media.vue';
-import ModalMedia from '/resources/js/src/UI/Media/components/modal-media.vue';
+import BtnMedia from './Media/components/btn-media.vue';
+import ModalMedia from './Media/components/modal-media.vue';
 
 // ============================================================
 // Страницы-шаблоны
@@ -35,25 +35,25 @@ import ModalMedia from '/resources/js/src/UI/Media/components/modal-media.vue';
  * Main - главный layout с навигацией и sidebar
  * Основной контейнер для всех защищённых страниц
  */
-import Main from '/resources/js/src/Pages/Core/index.vue';
+import Main from '../Pages/Core/index.vue';
 
 /**
  * Login - страница авторизации
  * @route /login
  */
-import Login from '/resources/js/src/Pages/Auth/login.vue';
+import Login from '../Pages/Auth/login.vue';
 
 /**
  * Register - страница регистрации нового пользователя
  * @route /register
  */
-import Register from '/resources/js/src/Pages/Auth/register.vue';
+import Register from '../Pages/Auth/register.vue';
 
 /**
  * Forget - страница восстановления пароля
  * @route /forgot-password
  */
-import Forget from '/resources/js/src/Pages/Auth/forget.vue';
+import Forget from '../Pages/Auth/forget.vue';
 
 // ============================================================
 // UI компоненты - Уведомления и ошибки
@@ -63,7 +63,7 @@ import Forget from '/resources/js/src/Pages/Auth/forget.vue';
  * NotyError - компонент отображения ошибок валидации
  * Показывает красивые уведомления об ошибках
  */
-import NotyError from '/resources/js/src/UI/error.vue';
+import NotyError from './error.vue';
 
 // ============================================================
 // UI компоненты - Поля ввода
@@ -73,19 +73,19 @@ import NotyError from '/resources/js/src/UI/error.vue';
  * MCInput - стандартное текстовое поле ввода
  * Поддерживает валидацию, placeholder, маски
  */
-import MCInput from '/resources/js/src/UI/Input/input.vue';
+import MCInput from './input/input.vue';
 
 /**
  * MCPhone - поле ввода телефона с маской
  * Автоматически форматирует номер телефона
  */
-import MCPhone from '/resources/js/src/UI/Input/phone.vue';
+import MCPhone from './input/phone.vue';
 
 /**
  * MCTextarea - многострочное текстовое поле
  * Для ввода больших объёмов текста
  */
-import MCTextarea from '/resources/js/src/UI/Input/textarea.vue';
+import MCTextarea from './input/textarea.vue';
 
 // ============================================================
 // UI компоненты - Выпадающие списки
@@ -95,25 +95,25 @@ import MCTextarea from '/resources/js/src/UI/Input/textarea.vue';
  * MCOption - опция для выпадающего списка
  * Используется внутри mc-select
  */
-import MCOption from '/resources/js/src/UI/Select/option.vue';
+import MCOption from './Select/option.vue';
 
 /**
  * MCSelect - множественный выбор из списка
  * Позволяет выбрать несколько значений
  */
-import MCSelect from '/resources/js/src/UI/Select/select.vue';
+import MCSelect from './Select/select.vue';
 
 /**
  * MCSelectOne - одиночный выбор из списка
  * Позволяет выбрать только одно значение
  */
-import MCSelectOne from '/resources/js/src/UI/Select/select-one.vue';
+import MCSelectOne from './Select/select-one.vue';
 
 /**
  * MCSelectToo - альтернативный компонент выбора
  * Дополнительный вариант выпадающего списка
  */
-import MCSelectToo from '/resources/js/src/UI/Select/select-too.vue';
+import MCSelectToo from './Select/select-too.vue';
 
 // ============================================================
 // Объект UI компонентов
