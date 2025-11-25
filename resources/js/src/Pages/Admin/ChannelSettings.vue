@@ -1,5 +1,8 @@
 <template>
   <div class="channel-settings-container">
+    <!-- Навигация админ-панели -->
+    <AdminNav />
+    
     <h1>Управление каналами подписки</h1>
 
     <div class="info-box">
@@ -105,11 +108,13 @@
 <script>
 import axios from 'axios'
 import BtnMedia from '/resources/js/src/UI/Media/components/btn-media.vue'
+import AdminNav from '../../components/AdminNav.vue'
 
 export default {
   name: 'ChannelSettings',
   components: {
-    BtnMedia
+    BtnMedia,
+    AdminNav
   },
   data() {
     return {

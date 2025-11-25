@@ -1,5 +1,8 @@
 <template>
     <div class="bg-light min-vh-100">
+        <!-- Навигация админ-панели -->
+        <AdminNav />
+        
         <!-- Заголовок страницы -->
         <div class="bg-white border-bottom">
             <div class="container-fluid py-3">
@@ -204,6 +207,7 @@
 <script>
 import Folders from './components/folders.vue'
 import Download from './components/download.vue'
+import AdminNav from '../../components/AdminNav.vue'
 
 
 export default {
@@ -211,6 +215,7 @@ export default {
     components: {
         folders:Folders,
         download:Download,
+        AdminNav,
 
     },
     props:{

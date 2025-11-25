@@ -1,5 +1,8 @@
 <template>
   <div class="wheel-settings">
+    <!-- Навигация админ-панели -->
+    <AdminNav />
+    
     <header class="wheel-settings__header">
       <div>
         <p class="wheel-settings__eyebrow">Администрирование</p>
@@ -186,6 +189,7 @@
 
 <script>
 import axios from 'axios'
+import AdminNav from '../../components/AdminNav.vue'
 
 const createSection = (index = 0) => ({
   id: null,
